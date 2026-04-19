@@ -2,7 +2,7 @@
 
 A complete home lab demonstrating a realistic attack chain using VirtualBox, Sysmon, and Splunk SIEM.
 
-![Network Diagram](docs/network-diagram.png)
+![Network Diagram](docs/network-diagram.jpg)
 
 ## 🎯 Project Overview
 - **Hypervision*: VirtualBox

@@ -15,9 +15,10 @@ Detailed guide to reproduce the **Cyber Home Lab: Kali Linux Attacker -> Windows
     - Enable "Shared Clipboard" and "Drag and Drop" (Bidirectional) for convenience
 
 **Screenshots**: 
-![VirtualBox Installer](screenshots/virtualbox-installer.png)
 
-![Virtualbox window](screenshots/virtualbox-screenshot.png)
+![VirtualBox Installer](../screenshots/virtualbox-installer.png)
+
+![Virtualbox Window](../screenshots/virtualbox-screenshot.png)
 
 ## 2. Congigure Virtual Networking (Very Important)
 

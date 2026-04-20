@@ -1,4 +1,4 @@
-# Cyber Home Lab: Full Attack Simulation (Linux → Windows 10)
+# Cyber Home Lab: Full Attack Simulation (Kali Linux → Windows 10)
 
 A complete home lab demonstrating a realistic attack chain using VirtualBox, Sysmon, and Splunk SIEM.
 

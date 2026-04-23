@@ -7,7 +7,7 @@ The goal of this project was to simulate a real-world cyber attack within a cont
 The lab consisits of an isolated virtual network designed to mirror a small enterprise segment.
 
 | Component | Operating System | Role | Primary Tools | 
-| --------- | ---------------- | ---- | ------------- |
+| :---------: | :----------------: | :----: | :-------------: |
 | Attacker Node | Kali Linux | Adversary | Metasploit, Nmap | 
 | Target Node | Windows 10 | Victim Workstation | Sysmon, PowerShell |
 | SIEM / Logging | Windows 10 (Host) | Monitoring & Analysis | Splunk Enterprise |

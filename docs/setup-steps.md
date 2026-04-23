@@ -3,8 +3,8 @@
 Detailed guide to reproduce the 
 **Cyber Home Lab: Kali Linux Attacker -> Windows 10 Victim with Sysmon + Splunk**.
 
-**Estimated time**: 4-5 hours\
-**Difficulty**: Beginner-Intermediate\
+**Estimated time**: 4-5 hours<br/>
+**Difficulty**: Beginner-Intermediate<br/>
 **Requirements**: A computer with at least 16 GB RAM (8 GB minimum) and 50+ GB free disk space.
 
 ## 1. Install VirtualBox (Hypervisor)

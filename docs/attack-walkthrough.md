@@ -14,4 +14,5 @@ The lab consisits of an isolated virtual network designed to mirror a small ente
 
 ## 3. Technical Workflow
 The simulation follows a three-stage lifecycle:
-    1. Deployment: 
+    1. Deployment: Provisioning VMs via VirtualBox and establishing a private `Internal Network` to ensure safety and isolation.
+    2. Instrumentation: Configuring Sysmon     

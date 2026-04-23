@@ -13,6 +13,6 @@ The lab consisits of an isolated virtual network designed to mirror a small ente
 | SIEM / Logging | Windows 10 (Host) | Monitoring & Analysis | Splunk Enterprise |
 
 ## 3. Technical Workflow
-The simulation follows a three-stage lifecycle:
+The simulation follows a three-stage lifecycle:<br/>
     1. Deployment: Provisioning VMs via VirtualBox and establishing a private `Internal Network` to ensure safety and isolation.<br/>
     2. Instrumentation: Configuring Sysmon     

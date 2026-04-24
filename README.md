@@ -6,9 +6,9 @@ A complete home lab demonstrating a realistic attack chain using VirtualBox, Sys
 
 ## 🎯 Project Overview
 - **Hypervision**: VirtualBox
-- **Victim**: Windows 10 VM with Sysmon + Splunk Universal Forwarder
+- **Victim**: Windows 10 VM with Sysmon + Splunk Enterprise
 - **Attacker**: Kali Linux VM
-- **Simulation**: Payload deployment -> successfull invasion -> command & control visibility in Splunk
+- **Simulation**: Payload deployment -> successful invasion -> command & control visibility in Splunk
 
 ## 🛠️ Lab Architecture
 - IP configuration details

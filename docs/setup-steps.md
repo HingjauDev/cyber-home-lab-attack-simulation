@@ -21,7 +21,7 @@ Detailed guide to reproduce the
 
 ![Virtualbox Window](../screenshots/virtualbox-screenshot.png)
 
-## 2. Congigure Virtual Networking (Very Important)
+## 2. Configure Virtual Networking (Very Important)
 
 - Create a **Host-Only Adapter** (recommended for isolation) or use **Internal Network**
 - Set up a dedicated network (e.g., 192.168.88.0/24)
@@ -44,9 +44,9 @@ Detailed guide to reproduce the
 ### Windows 10 Victim VM
 - ISO download from https://www.microsoft.com/en-us/software-download/windows10 
 - Recommended specs: 6-8 GB RAM, 2-4 CPU cores, 40-60 GB disk
-- Network adapter: Set NAT network mode if downloads needed. It is default to Internal Netowrk most of the time. 
+- Network adapter: Set NAT network mode if downloads needed. It is default to Internal Network most of the time. 
 - Install Windows 10 
-- Activation is not madatory for home lab use, but type the activation key in if needed. 
+- Activation is not mandatory for home lab use, but type the activation key in if needed. 
 - Set static IP, hostname, disable Windows Defender temporarily for testing and Firewall.
 
 ## 4. Install Monitoring Tools on windows 10 
@@ -59,6 +59,7 @@ Detailed guide to reproduce the
     - Installation steps
     - Configuration (`inputs.conf` to monitor Sysmon logs, Security logs, etc.)
     - Create index (e.g., `victim-endpoint`)
+
     
 
 ## 5. Final Lab Preparations

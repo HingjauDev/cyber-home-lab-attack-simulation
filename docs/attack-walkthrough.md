@@ -1,18 +1,28 @@
-# Attack Simulation Walkthrough
+# Attack Walkthrough
 
-## 1. Objective
-The goal of this project was to simulate a real-world cyber attack within a controlled environment from initial compromise to defensive detection. By acting as both the red Team (Attacker) and the Blue Team (Defender), the simulation aims to validate how specific attack signatures (like reverse shells) manifest in Windows logs and how to reveal those threats using Splunk. 
+This is document details the simulated attack from the **Kali Linux Attacker VM** to the **Windows 10 Victim VM**, including payload delivery, successful compromise, command execution, and detection in **Splunk**.
 
-## 2. Environment Architecture
-The lab consisits of an isolated virtual network designed to mirror a small enterprise segment.
+**Lab Context**
+- Attacker: Kali Linux VM - IP: `192.168.20.11`
+- Victim: Windows 10 VM with **Sysmon** + **Splunk Enterprise** - IP: `192.168.20.12`
+- Network: Isolated VirtualBox [Internal] Network
+- Goal: Simulate a realistic attack chain and validate detection capabilities
 
-| Component | Operating System | Role | Primary Tools | 
-| :---------: | :----------------: | :----: | :-------------: |
-| Attacker Node | Kali Linux | Adversary | Metasploit, Nmap | 
-| Target Node | Windows 10 | Victim Workstation | Sysmon, PowerShell |
-| SIEM / Logging | Windows 10 (Host) | Monitoring & Analysis | Splunk Enterprise |
+**⚠️ Important Notes**
+- All activities were performed in an **isolated lab environment** with no internet access to the victim during testing. 
+- No real malware was used - only safe, educational payloads for demonstration. 
+- Take a VM snapshot before starting the attack
 
-## 3. Technical Workflow
-The simulation follows a three-stage lifecycle:<br/>
-    - 1. Deployment: Provisioning VMs via VirtualBox and establishing a private `Internal Network` to ensure safety and isolation.<br/>
-    - 2. Instrumentation: Configuring Sysmon     
+## 1. Preparation on Attacker (Kali Linux)
+
+1. Scan the OS information
+```bash
+nmap -A -Pn -n 192.168.20.12
+```
+
+2. Create the payload
+    ```bash
+    
+
+
+    ```

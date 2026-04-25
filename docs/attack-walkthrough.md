@@ -22,9 +22,9 @@ nmap -A -Pn -n 192.168.20.12
 ![Scanned OS Information](../screenshots/attacker_side/os-info-scan.png)
 
 2. List the available payloads and create one for exploit
-    ```bash
-    msfvenom -l payloads
-    ```
+```bash
+msfvenom -l payloads
+```
 ![List the payloads](../screenshots/attacker_side/list_the_payloads.png)
 
 ```bash
@@ -99,20 +99,20 @@ net localgroup
 ![Command: systeminfo](../screenshots/attacker_side/c2_systeminfo.png)
 
 ## 4. Detection in Splunk
-    1. Open `Microsoft Edge` browser and type `localhost:8000` in the address bar
-    2. Login with `Username` and `Password`
-    3. Click `Search & Reporting`
-    4. Input `Index=endpoint microsoft_update.exe` in the search bar
+1. Open `Microsoft Edge` browser and type `localhost:8000` in the address bar
+2. Login with `Username` and `Password`
+3. Click `Search & Reporting`
+4. Input `Index=endpoint microsoft_update.exe` in the search bar
 
 ![Splunk Search Bar](../screenshots/victim_side/search_bar_ms_u_exe.png)
 
-    5. Find `EventCode` from the left column and click the value `1`. The EventCode condition will be added into the search bar and the result will be updated. 
+5. Find `EventCode` from the left column and click the value `1` or input as the search condition as `EventCode=1`. The EventCode condition will be added into the search bar and the result will be updated. 
 
 ![Eventcode Added](../screenshots/victim_side/eventcode_added.png)
 
-    6. Collapse the first result -> find `process_guid` or`ProcessGUID`(unique identifier of program) -> Update the search bar with 
-    
-    `index=endpoint [process_guid](copy & paste from event) | table _time, ParentImage, Image, CommandLine`
+6. Collapse the first result -> find `process_guid` or`ProcessGUID`(unique identifier of program) -> Update the search bar with 
+
+`index=endpoint [process_guid](copy & paste from event) | table _time, ParentImage, Image, CommandLine`
 
 ![Executed Commands Found](../screenshots/victim_side/final_search_result.png)
 

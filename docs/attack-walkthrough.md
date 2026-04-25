@@ -93,6 +93,11 @@ systeminfo
 net user
 net localgroup
 ```
+
+![Commands: whoami & ipconfig](../screenshots/attacker_side/c2_whoami_ipconfig.png)
+
+![Command: systeminfo](../screenshots/attacker_side/c2_systeminfo.png)
+
 ## 4. Detection in Splunk
     1. Open `Microsoft Edge` browser and type `localhost:8000` in the address bar
     2. Login with `Username` and `Password`
@@ -116,7 +121,7 @@ To align this simulation with industry standards, the following attack behaviors
 
 | Tactics | Technique ID | Description | Observed in Lab | 
 | ------- | ------------ | -------------- | ---------------- |
-| Initial Access| T1566 | Phishing | Delivery of malicious payload via simulated user download. |
+| Initial Access| T1566 | Phishing | Delivery of malicious payload via simulated user download from browser. |
 | Execution | T1059.003 | Windows Command Shell | Execution of the reverse shell payload on the Windows host (e.g. "shell" command in Meterpreter). |
-| Command & Control | T1071.001 | Reverse Shell | A series of commands were executed for harvesting information of the victim machine. |
-| Discovery | T1087.001, T1040, T1069.001, T1082, T1033| Commands executed, such as "whoami", "systeminfo" and "net user"| Post-Exploitation |
+| Command & Control | T1071.001 | Reverse Shell | A series of commands were executed for harvesting information of the victim machine, such as "whoami", "systeminfo" and "net user". |
+| Discovery | T1087.001, T1040, T1069.001, T1082, T1033| Dumping information of os, users, groups and network from the victim machine | Post-Exploitation |

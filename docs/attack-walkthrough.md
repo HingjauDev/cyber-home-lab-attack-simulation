@@ -117,5 +117,6 @@ To align this simulation with industry standards, the following attack behaviors
 | Tactics | Technique ID | Description | Observed in Lab | 
 | ------- | ------------ | -------------- | ---------------- |
 | Initial Access| T1566 | Phishing | Delivery of malicious payload via simulated user download. |
-| Execution | T1059.003 | Windows Command Shell | Execution of the reverse shell payload on the Windows host. |
-| Command & Control | T1071.001 | Reverse Shell | A series of commands were executed for harvesting information of the host machine. |
+| Execution | T1059.003 | Windows Command Shell | Execution of the reverse shell payload on the Windows host (e.g. "shell" command in Meterpreter). |
+| Command & Control | T1071.001 | Reverse Shell | A series of commands were executed for harvesting information of the victim machine. |
+| Discovery | T1087.001, T1040, T1069.001, T1082, T1033| Commands executed, such as "whoami", "systeminfo" and "net user"| Post-Exploitation |

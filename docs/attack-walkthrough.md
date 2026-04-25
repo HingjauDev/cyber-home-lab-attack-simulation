@@ -127,9 +127,9 @@ To align this simulation with industry standards, the following attack behaviors
 | Discovery | T1087.001, T1040, T1069.001, T1082, T1033| Dumping information of os, users, groups and network from the victim machine | Post-Exploitation |
 
 ## 6. Lessons learned
-    - Value of centralized logging with Splunk
-    - How small changes in payload can affect detection
-    - Real-world relevance to blue team / SOC work
-    - How MITRE ATT&CK can be applied in practical attack/defense environment. 
+- Value of centralized logging with Splunk
+- How small changes in payload can affect detection
+- Real-world relevance to blue team / SOC work
+- How MITRE ATT&CK can be applied in practical attack/defense environment. 
 
 **Back to**: Setup Steps [setup-steps.md](../docs/setup-steps.md)

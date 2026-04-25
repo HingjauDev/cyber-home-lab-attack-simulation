@@ -125,3 +125,11 @@ To align this simulation with industry standards, the following attack behaviors
 | Execution | T1059.003 | Windows Command Shell | Execution of the reverse shell payload on the Windows host (e.g. "shell" command in Meterpreter). |
 | Command & Control | T1071.001 | Reverse Shell | A series of commands were executed for harvesting information of the victim machine, such as "whoami", "systeminfo" and "net user". |
 | Discovery | T1087.001, T1040, T1069.001, T1082, T1033| Dumping information of os, users, groups and network from the victim machine | Post-Exploitation |
+
+## 6. Lessons learned
+    - Value of centralized logging with Splunk
+    - How small changes in payload can affect detection
+    - Real-world relevance to blue team / SOC work
+    - How MITRE ATT&CK can be applied in practical attack/defense environment. 
+
+**Back to**: Setup Steps [setup-steps.md](../docs/setup-steps.md)

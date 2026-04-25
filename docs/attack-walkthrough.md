@@ -110,3 +110,12 @@ net localgroup
     `index=endpoint [process_guid](copy & paste from event) | table _time, ParentImage, Image, CommandLine`
 
 ![Executed Commands Found](../screenshots/victim_side/final_search_result.png)
+
+## 5. MITRE ATT&CK Mapping
+To align this simulation with industry standards, the following attack behaviors have been mapped to the `MITRE ATT&CK Framework` Mapping these techniques ensures that the detection strategies developed in Splunk are categorized against known adversary tactics, providing a structured approach to threat hunting and control validation. 
+
+| Tactics | Technique ID | Description | Observed in Lab | 
+| ------- | ------------ | -------------- | ---------------- |
+| Initial Access| T1566 | Phishing | Delivery of malicious payload via simulated user download. |
+| Execution | T1059.003 | Windows Command Shell | Execution of the reverse shell payload on the Windows host. |
+| Command & Control | T1071.001 | Reverse Shell | A series of commands were executed for harvesting information of the host machine. |

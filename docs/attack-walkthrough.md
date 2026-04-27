@@ -82,8 +82,8 @@ C:\Windows\system32>nestat -anob
 ![Malware Running](../screenshots/victim_side/malware_running_verification.png)
 
 ## 3. Post-Exploitation / Command & Control
-When the malware is executed successfully, a reverse shell can be opened for command and control in Kali. 
-Go back to Kali, Meterpreter is ready for ongoing invasion. The following commands were executed in the reverse shell 
+When the malware is executed successfully, a reverse shell can be opened for command and control in **Kali**. 
+Go back to Kali, **Meterpreter** is ready for ongoing invasion. The following commands were executed in the reverse shell 
 ```bash
 shell
 
@@ -117,7 +117,7 @@ net localgroup
 ![Executed Commands Found](../screenshots/victim_side/final_search_result.png)
 
 ## 5. MITRE ATT&CK Mapping
-To align this simulation with industry standards, the following attack behaviors have been mapped to the `MITRE ATT&CK Framework` Mapping these techniques ensures that the detection strategies developed in Splunk are categorized against known adversary tactics, providing a structured approach to threat hunting and control validation. 
+To align this simulation with industry standards, the following attack behaviors have been mapped to the **MITRE ATT&CK Framework** Mapping these techniques ensures that the detection strategies developed in Splunk are categorized against known adversary tactics, providing a structured approach to threat hunting and control validation. 
 
 | Tactics | Technique ID | Description | Observed in Lab | 
 | ------- | ------------ | -------------- | ---------------- |

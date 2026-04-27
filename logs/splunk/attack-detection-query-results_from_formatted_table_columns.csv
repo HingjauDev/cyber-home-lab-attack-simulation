@@ -1,0 +1,12 @@
+"_time",ParentImage,Image,CommandLine
+"2026-04-24T18:11:27.388+1000",,,
+"2026-04-24T17:41:25.878+1000",,,
+"2026-04-24T17:12:51.503+1000","C:\Windows\System32\cmd.exe","C:\Windows\System32\net.exe","net  localgroup"
+"2026-04-24T17:12:15.721+1000","C:\Windows\System32\cmd.exe","C:\Windows\System32\net.exe","net  user"
+"2026-04-24T17:11:59.063+1000","C:\Windows\System32\cmd.exe","C:\Windows\System32\systeminfo.exe",systeminfo
+"2026-04-24T17:11:51.481+1000","C:\Windows\System32\cmd.exe","C:\Windows\System32\ipconfig.exe",ipconfig
+"2026-04-24T17:11:25.099+1000",,,
+"2026-04-24T17:10:57.852+1000","C:\Windows\System32\cmd.exe","C:\Windows\System32\whoami.exe",whoami
+"2026-04-24T17:10:47.223+1000",,,
+"2026-04-24T17:10:47.195+1000","C:\Users\jolly\Downloads\microsoft_update.exe","C:\Windows\System32\cmd.exe","C:\Windows\system32\cmd.exe"
+"2026-04-24T18:41:29.483+1000",,,

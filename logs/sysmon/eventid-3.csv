@@ -1,0 +1,134 @@
+﻿Level,Date and Time,Source,Event ID,Task Category
+Information,4/25/2026 5:41:03 PM,Microsoft-Windows-Sysmon,3,Network connection detected (rule: NetworkConnect),"Network connection detected:
+RuleName: technique_id=T1571,technique_name=Non-Standard Port
+UtcTime: 2026-04-25 07:41:02.266
+ProcessGuid: {9172be70-6df7-69ec-e500-000000001f00}
+ProcessId: 6412
+Image: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+User: WIN10DEMO\jolly
+Protocol: udp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.20.12
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 224.0.0.251
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+Information,4/25/2026 5:41:03 PM,Microsoft-Windows-Sysmon,3,Network connection detected (rule: NetworkConnect),"Network connection detected:
+RuleName: technique_id=T1571,technique_name=Non-Standard Port
+UtcTime: 2026-04-25 07:41:02.266
+ProcessGuid: {9172be70-6dae-69ec-3400-000000001f00}
+ProcessId: 2428
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: false
+SourceIsIpv6: false
+SourceIp: 224.0.0.251
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.20.12
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+Information,4/25/2026 5:41:03 PM,Microsoft-Windows-Sysmon,3,Network connection detected (rule: NetworkConnect),"Network connection detected:
+RuleName: technique_id=T1571,technique_name=Non-Standard Port
+UtcTime: 2026-04-25 07:41:02.266
+ProcessGuid: {9172be70-6df7-69ec-e500-000000001f00}
+ProcessId: 6412
+Image: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+User: WIN10DEMO\jolly
+Protocol: udp
+Initiated: false
+SourceIsIpv6: false
+SourceIp: 224.0.0.251
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.20.12
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+Information,4/25/2026 5:41:03 PM,Microsoft-Windows-Sysmon,3,Network connection detected (rule: NetworkConnect),"Network connection detected:
+RuleName: technique_id=T1571,technique_name=Non-Standard Port
+UtcTime: 2026-04-25 07:41:02.267
+ProcessGuid: {9172be70-6df7-69ec-e500-000000001f00}
+ProcessId: 6412
+Image: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+User: WIN10DEMO\jolly
+Protocol: udp
+Initiated: true
+SourceIsIpv6: true
+SourceIp: fe80:0:0:0:d509:4724:aa38:8272
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: ff02:0:0:0:0:0:0:fb
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+Information,4/25/2026 5:41:03 PM,Microsoft-Windows-Sysmon,3,Network connection detected (rule: NetworkConnect),"Network connection detected:
+RuleName: technique_id=T1571,technique_name=Non-Standard Port
+UtcTime: 2026-04-25 07:41:02.267
+ProcessGuid: {9172be70-6dae-69ec-3400-000000001f00}
+ProcessId: 2428
+Image: C:\Windows\System32\svchost.exe
+User: NT AUTHORITY\NETWORK SERVICE
+Protocol: udp
+Initiated: false
+SourceIsIpv6: true
+SourceIp: ff02:0:0:0:0:0:0:fb
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: fe80:0:0:0:d509:4724:aa38:8272
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+Information,4/25/2026 5:41:03 PM,Microsoft-Windows-Sysmon,3,Network connection detected (rule: NetworkConnect),"Network connection detected:
+RuleName: technique_id=T1571,technique_name=Non-Standard Port
+UtcTime: 2026-04-25 07:41:02.267
+ProcessGuid: {9172be70-6df7-69ec-e500-000000001f00}
+ProcessId: 6412
+Image: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+User: WIN10DEMO\jolly
+Protocol: udp
+Initiated: false
+SourceIsIpv6: true
+SourceIp: ff02:0:0:0:0:0:0:fb
+SourceHostname: -
+SourcePort: 5353
+SourcePortName: -
+DestinationIsIpv6: true
+DestinationIp: fe80:0:0:0:d509:4724:aa38:8272
+DestinationHostname: -
+DestinationPort: 5353
+DestinationPortName: -"
+Information,4/25/2026 5:41:31 PM,Microsoft-Windows-Sysmon,3,Network connection detected (rule: NetworkConnect),"Network connection detected:
+RuleName: technique_id=T1036,technique_name=Masquerading
+UtcTime: 2026-04-25 07:41:26.272
+ProcessGuid: {9172be70-702a-69ec-1c03-000000001f00}
+ProcessId: 4700
+Image: C:\Users\jolly\Downloads\microsoft_update.exe
+User: WIN10DEMO\jolly
+Protocol: tcp
+Initiated: true
+SourceIsIpv6: false
+SourceIp: 192.168.20.12
+SourceHostname: -
+SourcePort: 49924
+SourcePortName: -
+DestinationIsIpv6: false
+DestinationIp: 192.168.20.11
+DestinationHostname: -
+DestinationPort: 3344
+DestinationPortName: -"

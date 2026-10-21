@@ -4,28 +4,24 @@ A complete home lab demonstrating a realistic attack chain using VirtualBox, Sys
 
 ![Network Diagram](docs/network-diagram.jpg)
 
-## 🎯 Project Overview
+## Project Overview
 - **Hypervision**: VirtualBox
 - **Victim**: Windows 10 VM with Sysmon + Splunk Enterprise
 - **Attacker**: Kali Linux VM
 - **Simulation**: Payload deployment -> successful invasion -> command & control visibility in Splunk
 
-## 🛠️ Lab Architecture
+## Lab Architecture
 - IP configuration details
 - Sysmon configuration (advanced process tracking)
 - Splunk dashboard for detection
 
-## 🚀 Attack Walkthrough
+## Attack Walkthrough
 1. Payload creation on Kali
 2. Delivery & execution on Windows 10
 3. Command execution visibility in Splunk
 
-**Screenshots:**
-![Splunk Alert](screenshots/splunk-alert.jpg)
-![System Event](screenshots/sysmon-event.jpg)
-
-## 🛡️ Detection & Response
+## Detection & Response
 How Splunk detected the attack + sample queries used.
 
-## 📌 Topics
+## Topics
 `homelab` `cybersecurity` `redteam` `blueteam` `sysmon` `splunk` `virtualbox` `attack-simulation` `siem`, `threat-detection`

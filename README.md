@@ -24,14 +24,21 @@ A complete home lab demonstrating a realistic attack chain using VirtualBox, Sys
 How Splunk detected the attack + sample queries used.
 
 ## MD documents
-1. logs/
+1. cyber-home-lab-attack-simulation/
     README.md
 
-2. docs/
+2. logs/
+
+    README.md
+
+3. docs/
+
     attack-walkthrough.md
+
     setup-steps.md
 
-3. sysmon/
+4. sysmon/
+
     README.md
 
 ## Topics
